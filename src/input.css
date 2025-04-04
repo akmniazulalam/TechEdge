@@ -8,11 +8,15 @@
     --tracking-bannerls: -1.32px;
     --spacing-80: 80.2px;
     --spacing-68: 68px;
+    --spacing-38: 38px;
     --color-primary: #FF3B00;
     --color-headingC: #05091D;
     --color-headerC: #05091D;
     --color-inputBoxC: #171A2B;
+    --color-strokeC: #7a7a7a;
     --radius-20: 20px;
     --shadow-box: 0 5px 20px 0 rgba(22, 44, 83, 0.1); 
+    --shadow-logo: 0px 4px 25px 0px rgba(0, 0, 0, 0.06); 
+    --shadow-testimonial: 0px 5px 60px 0px rgba(0, 0, 0, 0.05); 
     /* --color-linear: linear-gradient[176deg, rgba(245,245,250,1) 0%, rgba(198,195,232,1) 22%, rgba(194,187,247,1) 35%, rgba(179,176,252,1) 51%, rgba(141,129,249,1) 66%, rgba(96,90,184,1) 78%, rgba(72,54,168,1) 86%, rgba(54,32,164,1) 92%, rgba(48,39,131,1) 98%, rgba(62,92,199,1) 98%, rgba(71,32,171,1) 100%]; */
   }
