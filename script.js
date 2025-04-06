@@ -87,3 +87,47 @@ $(document).ready(function () {
   // Run on slide change
   $(".imgSlider").on("afterChange", setActiveDot);
 });
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const counter = document.querySelector('.counter');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        window.counterUp.default(counter, {
+          duration: 2000,
+          delay: 10,
+        });
+        observer.unobserve(counter);
+      }
+    });
+  }, {
+    threshold: 1,
+  });
+
+  observer.observe(counter);
+});
+
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counterUp');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          window.counterUp.default(entry.target, {
+            duration: 2000,
+            delay: 16,
+          });
+          observer.unobserve(entry.target); // Animate once
+        }
+      });
+    }, { threshold: 1 });
+
+    counters.forEach(counter => {
+      observer.observe(counter);
+    });
+  });
+
